@@ -1,6 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/cloudflare/workers-sdk/main/packages/wrangler/config-schema.json",
-  "name": "diary-api",
+  "name": "dailylife1",
   "main": "src/index.js",
   "compatibility_date": "2026-02-27",
   "compatibility_flags": ["nodejs_compat"],
