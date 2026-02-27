@@ -1,0 +1,19 @@
+{
+  "$schema": "https://raw.githubusercontent.com/cloudflare/workers-sdk/main/packages/wrangler/config-schema.json",
+  "name": "diary-api",
+  "main": "src/index.js",
+  "compatibility_date": "2026-02-27",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": {
+    "enabled": true
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "diary-db",
+      "database_id": "9bd30028-d725-4f05-ac26-1f719cfb18df" // 替换为您的实际数据库ID
+    }
+  ]
+}
+
+
