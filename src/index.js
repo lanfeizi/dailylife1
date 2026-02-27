@@ -1,4 +1,17 @@
 // Worker 入口文件
+// 在 Worker 代码的开头部分添加
+if (path === '/') {
+  return new Response(JSON.stringify({
+    status: 'ok',
+    message: '日记应用API服务运行中',
+    endpoints: ['/api/entries', '/api/sync']
+  }), {
+    headers: { 
+      'Content-Type': 'application/json',
+      'Access-Control-Allow-Origin': '*'
+    }
+  });
+}
 export default {
   async fetch(request, env) {
     // 处理 CORS 预检请求
